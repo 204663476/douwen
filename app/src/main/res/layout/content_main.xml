@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.huagongzi.douwen.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/main_small_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.huagongzi.douwen.cardswipelayout.CardRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/main_button_hate"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_buttons_hate_selector" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/main_button_like"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_buttons_like_selector" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

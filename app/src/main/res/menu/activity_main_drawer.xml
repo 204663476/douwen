@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="功能">
+    <menu >
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_douwen"
+            android:title="抖文" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/ic_stat"
+            android:title="喜欢" />
+        <item
+            android:id="@+id/nav_yw"
+            android:icon="@drawable/ic_yw"
+            android:title="一文" />
+
+    </menu>
+    </item>
+
+    <item android:title="其它">
+        <menu>
+           <!-- <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_share"
+                android:title="关于" />   -->
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出" />
+        </menu>
+    </item>
+
+</menu>
